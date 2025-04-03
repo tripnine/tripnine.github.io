@@ -1,0 +1,640 @@
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #475569;
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+
+  /* WoW quality colors */
+  --quality-poor: #9d9d9d;
+  --quality-common: #ffffff;
+  --quality-uncommon: #1eff00;
+  --quality-rare: #0070dd;
+  --quality-epic: #a335ee;
+  --quality-legendary: #ff8000;
+
+  /* Point improvement colors - positive progression */
+  --points-none: var(--gray-700);
+  --points-low: #64748b;      /* Light slate gray */
+  --points-medium: #6366f1;   /* Indigo */
+  --points-high: #8b5cf6;     /* Purple */
+  --points-very-high: #10b981; /* Green */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg-primary);
+  background-image: linear-gradient(to bottom, #0f172a, #1e293b);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  line-height: 1.5;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--bg-secondary);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .profile-header {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+}
+
+.character-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar-container {
+  position: relative;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  object-fit: cover;
+}
+
+.avatar-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-badge svg {
+  width: 14px;
+  height: 14px;
+  fill: white;
+}
+
+.character-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.character-realm {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.external-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.external-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.score-display {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .score-display {
+      text-align: right;
+  }
+}
+
+.score-label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.score-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: var(--gray-700);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  position: sticky;
+  top: 0;
+}
+
+td {
+  border-bottom: 1px solid var(--border-color);
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.dungeon-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dungeon-abbr {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  background-color: var(--gray-700);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: monospace;
+  width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.dungeon-full-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 2.5rem;
+}
+
+.badge-score {
+  background-color: var(--gray-700);
+  color: var(--text-primary);
+}
+
+.badge-score-0 {
+  background-color: var(--danger);
+  color: white;
+}
+
+/* Updated point badge colors with positive progression */
+.badge-points-none {
+  background-color: var(--points-none);
+  color: var(--text-muted);
+}
+
+.badge-points-low {
+  background-color: rgba(100, 116, 139, 0.3);
+  color: #cbd5e1;
+}
+
+.badge-points-medium {
+  background-color: rgba(99, 102, 241, 0.3);
+  color: #c7d2fe;
+}
+
+.badge-points-high {
+  background-color: rgba(139, 92, 246, 0.3);
+  color: #ddd6fe;
+}
+
+.badge-points-very-high {
+  background-color: rgba(16, 185, 129, 0.3);
+  color: #6ee7b7;
+}
+
+/* Legend for point colors */
+.color-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.legend-color {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+}
+
+.form-container {
+  margin-top: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .form-group {
+      flex-direction: row;
+  }
+}
+
+.input-container {
+  position: relative;
+  flex: 1;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.input {
+  width: 100%;
+  padding: 0.625rem 0.75rem 0.625rem 2.25rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--gray-700);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.button-primary {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.button-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+/* WoW quality colors for scores */
+.quality-poor {
+  color: var(--quality-poor);
+}
+
+.quality-common {
+  color: var(--quality-common);
+}
+
+.quality-uncommon {
+  color: var(--quality-uncommon);
+}
+
+.quality-rare {
+  color: var(--quality-rare);
+}
+
+.quality-epic {
+  color: var(--quality-epic);
+}
+
+.quality-legendary {
+  color: var(--quality-legendary);
+}
+
+/* Score badge colors */
+.score-0 {
+  background-color: var(--danger);
+  color: white;
+}
+
+.score-low {
+  background-color: var(--quality-common);
+  color: var(--gray-900);
+}
+
+.score-medium {
+  background-color: var(--quality-uncommon);
+  color: var(--gray-900);
+}
+
+.score-high {
+  background-color: var(--quality-rare);
+  color: white;
+}
+
+.score-very-high {
+  background-color: var(--quality-epic);
+  color: white;
+}
+
+.score-max {
+  background-color: var(--quality-legendary);
+  color: white;
+}
+
+/* Loading spinner */
+.spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* Mode Selector */
+.mode-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.mode-button {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-button:hover {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.mode-button.active {
+  color: var(--accent-color);
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+/* Mode Content */
+.mode-content {
+  display: none;
+}
+
+.mode-content.active {
+  display: block;
+}
+
+/* Team Styles */
+.team-profile {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.team-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--bg-card);
+  border-radius: 0.375rem;
+  max-width: 100%;
+}
+
+.team-member-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-member-info {
+  overflow: hidden;
+}
+
+.team-member-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.team-member-score {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.team-score {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.team-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.team-input {
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+
+.button-icon {
+  padding: 0.625rem;
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+}
+
+.button-icon:hover {
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
+.button-secondary {
+  background-color: var(--gray-700);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button-secondary:hover {
+  background-color: var(--gray-600);
+}
+
+.button-secondary svg {
+  width: 16px;
+  height: 16px;
+}
+
+.remove-player {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 640px) {
+  .remove-player {
+    position: static;
+    transform: none;
+    margin-top: 0.5rem;
+  }
+
+  .team-input {
+    display: block;
+  }
+
+  .team-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .team-actions button {
+    width: 100%;
+  }
+}

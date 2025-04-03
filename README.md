@@ -1,3 +1,5 @@
 # tripnine.github.io
  
-# all credit goes to @ravenousdead. i simply forked his repo and updated the dungeons for the current m+ season
+
+# all credit goes to the original authors: @ravenousdead and @Asgaroth
+# i simply forked the repo and am hosting it for my guild's personal use
