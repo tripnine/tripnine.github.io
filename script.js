@@ -1,60 +1,60 @@
 const dungeons = [
   {
-    id: 14938,
-    challenge_mode_id: 500,
-    slug: "the-rookery",
-    name: "The Rookery",
-    short_name: "ROOK",
+    id: 1303,
+    challenge_mode_id: 542,
+    slug: "ecodome-aldani",
+    name: "Eco-Dome Al'dani",
+    short_name: "ALD"
   },
   {
-    id: 12841,
-    challenge_mode_id: 382,
-    slug: "theater-of-pain",
-    name: "Theater of Pain",
-    short_name: "TOP",
+    id: 1271,
+    challenge_mode_id: 503,
+    slug: "arakara-city-of-echoes",
+    name: "Ara-Kara, City of Echoes",
+    short_name: "AKA"
   },
   {
-    id: 14882,
-    challenge_mode_id: 504,
-    slug: "darkflame-cleft",
-    name: "Darkflame Cleft",
-    short_name: "DFC",
+    id: 1194,
+    challenge_mode_id: 391,
+    slug: "tazavesh-the-veiled-market",
+    name: "Tazavesh: Streets of Wonder",
+    short_name: "TAZ-SW"
   },
   {
-    id: 8064,
-    challenge_mode_id: 247,
-    slug: "the-motherlode",
-    name: "The MOTHERLODE!!",
-    short_name: "ML",
+    id: 1194,
+    challenge_mode_id: 392,
+    slug: "tazavesh-the-veiled-market",
+    name: "Tazavesh: So'leah's Gambit",
+    short_name: "TAZ-G"
   },
   {
-    id: 800002,
-    challenge_mode_id: 370,
-    slug: "mechagon-workshop",
-    name: "Mechagon Workshop",
-    short_name: "WORK",
+    id: 1270,
+    challenge_mode_id: 505,
+    slug: "the-dawnbreaker",
+    name: "The Dawnbreaker",
+    short_name: "DAWN"
   },
   {
-    id: 15103,
-    challenge_mode_id: 506,
-    slug: "cinderbrew-meadery",
-    name: "Cinderbrew Meadery",
-    short_name: "BREW",
-  },
-  {
-    id: 14954,
-    challenge_mode_id: 499,
-    slug: "priory-of-the-sacred-flame",
-    name: "Priory of the Sacred Flame",
-    short_name: "PSF",
-  },
-  {
-    id: 15452,
+    id: 1298,
     challenge_mode_id: 525,
     slug: "operation-floodgate",
     name: "Operation: Floodgate",
-    short_name: "FLOOD",
+    short_name: "FLOOD"
   },
+  {
+    id: 1185,
+    challenge_mode_id: 378,
+    slug: "halls-of-atonement",
+    name: "Halls of Atonement",
+    short_name: "HOA"
+  },
+  {
+    id: 1267,
+    challenge_mode_id: 499,
+    slug: "priory-of-the-sacred-flame",
+    name: "Priory of the Sacred Flame",
+    short_name: "PSF"
+  }
 ];
 
 const keyScores = {
