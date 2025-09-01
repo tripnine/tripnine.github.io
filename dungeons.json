@@ -2,44 +2,29 @@
   {
     "dungeon": "Eco-Dome Al'dani",
     "short_name": "ALD",
+    "id": 542,
     "zone_id": 2830,
     "challenge_mode_id": 542,
     "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_ecodome.jpg",
     "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion10/base/eco-dome-aldani.jpg",
     "runs": [],
-    "affixes": [
-      {
-        "id": 9,
-        "name": "Tyrannical",
-        "description": "Bosses have 30% more health. Bosses and their minions inflict increased damage.",
-        "icon": "achievement_boss_archaedas",
-        "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
-        "wowhead_url": "https://wowhead.com/affix=9"
-      }
-    ]
+    "affixes": []
   },
   {
     "dungeon": "Ara-Kara, City of Echoes",
     "short_name": "AKA",
+    "id": 503,
     "zone_id": 2660,
     "challenge_mode_id": 503,
     "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_arakara.jpg",
     "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion10/base/ara-kara.jpg",
     "runs": [],
-    "affixes": [
-      {
-        "id": 10,
-        "name": "Fortified",
-        "description": "Non-boss enemies have 20% more health and inflict up to 30% increased damage.",
-        "icon": "achievement_boss_manamediv",
-        "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_manamediv.jpg",
-        "wowhead_url": "https://wowhead.com/affix=10"
-      }
-    ]
+    "affixes": []
   },
   {
     "dungeon": "Tazavesh: Streets of Wonder",
     "short_name": "TAZ-SW",
+    "id": 391,
     "zone_id": 2441,
     "challenge_mode_id": 391,
     "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_tazavesh.jpg",
@@ -50,6 +35,7 @@
   {
     "dungeon": "Tazavesh: So'leah's Gambit",
     "short_name": "TAZ-G",
+    "id": 392,
     "zone_id": 2441,
     "challenge_mode_id": 392,
     "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_tazavesh.jpg",
@@ -60,6 +46,7 @@
   {
     "dungeon": "The Dawnbreaker",
     "short_name": "DAWN",
+    "id": 505,
     "zone_id": 2662,
     "challenge_mode_id": 505,
     "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_dawnbreaker.jpg",
@@ -70,6 +57,7 @@
   {
     "dungeon": "Operation: Floodgate",
     "short_name": "FLOOD",
+    "id": 525,
     "zone_id": 2773,
     "challenge_mode_id": 525,
     "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_floodgate.jpg",
@@ -80,6 +68,7 @@
   {
     "dungeon": "Halls of Atonement",
     "short_name": "HOA",
+    "id": 378,
     "zone_id": 2287,
     "challenge_mode_id": 378,
     "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_revendreth.jpg",
@@ -90,6 +79,7 @@
   {
     "dungeon": "Priory of the Sacred Flame",
     "short_name": "PSF",
+    "id": 499,
     "zone_id": 2649,
     "challenge_mode_id": 499,
     "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_priory.jpg",
