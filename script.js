@@ -1,53 +1,62 @@
 const dungeons = [
   {
-    id: 542, // challenge_mode_id
+    id: 16104, // zone_id
+    challenge_mode_id: 542,
     slug: "ecodome-aldani",
     name: "Eco-Dome Al'dani",
     short_name: "ALD"
   },
   {
-    id: 503,
+    id: 15093,
+    challenge_mode_id: 503,
     slug: "arakara-city-of-echoes",
     name: "Ara-Kara, City of Echoes",
     short_name: "AKA"
   },
   {
-    id: 391,
+    id: 1000000,
+    challenge_mode_id: 391,
     slug: "tazavesh-the-veiled-market",
     name: "Tazavesh: Streets of Wonder",
     short_name: "TAZ-SW"
   },
   {
-    id: 392,
+    id: 1000001,
+    challenge_mode_id: 392,
     slug: "tazavesh-the-veiled-market",
     name: "Tazavesh: So'leah's Gambit",
     short_name: "TAZ-G"
   },
   {
-    id: 505,
+    id: 14971,
+    challenge_mode_id: 505,
     slug: "the-dawnbreaker",
     name: "The Dawnbreaker",
     short_name: "DAWN"
   },
   {
-    id: 525,
+    id: 15452,
+    challenge_mode_id: 525,
     slug: "operation-floodgate",
     name: "Operation: Floodgate",
     short_name: "FLOOD"
   },
   {
-    id: 378,
+    id: 12831,
+    challenge_mode_id: 378,
     slug: "halls-of-atonement",
     name: "Halls of Atonement",
     short_name: "HOA"
   },
   {
-    id: 499,
+    id: 14954,
+    challenge_mode_id: 499,
     slug: "priory-of-the-sacred-flame",
     name: "Priory of the Sacred Flame",
     short_name: "PSF"
   }
 ];
+
 
 const keyScores = {
   2: 165,
